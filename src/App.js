@@ -5,13 +5,14 @@ import ProductList from './ProductList';
 import Product from './Product';
 import ProductForm from './ProductForm';
 import About from './About';
+import Welcome from './Welcome';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />}>
-        <Route index element={<h1>Welcome</h1>} />
+        <Route index element={<Welcome />} />
         <Route path="about" element={<About />} />
         <Route path="products" element={<ProductList />}>
           <Route index element={<p>Select a Product for more details</p>}/>

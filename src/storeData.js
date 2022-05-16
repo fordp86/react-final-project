@@ -4,7 +4,7 @@ module.exports = () => {
   faker.seed(1234567890)
   let data = { products: [] }
   for (let i=0; i < 10; i++) {
-    let productImg = faker.image.food()
+    let productImg = faker.image.food(1234, 1234, true)
     data.products.push({
       id: i,
       itemName: faker.commerce.product(),

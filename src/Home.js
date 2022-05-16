@@ -1,5 +1,6 @@
-import { Navbar, Nav, Container, Stack } from 'react-bootstrap';
+import { Navbar, Nav, Container, Form, FormControl, Row, Col } from 'react-bootstrap';
 import { Link, Outlet } from 'react-router-dom';
+import styles from './Home.module.css'
 
 function Home(){
     return(
@@ -10,23 +11,44 @@ function Home(){
                         <img
                         alt="shopy guy logo"
                         src="/img/cart.png"
-                        width="50"
-                        height="50"
+                        width="200"
+                        height="auto"
                         className="d-inline-block align-top"
-                        />{' '}
-                    ShopyGuy
+                        />
                     </Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Link to="/" className="nav-link">Home</Link>
-                        <Link to="/about" className="nav-link">About</Link>
-                        <Link to="/products" className="nav-link">Products</Link>
-                        <Link to="/new" className="nav-link">Create</Link>
-                    </Nav>
+                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Collapse id="navbarScroll">
+                        <Nav className="me-auto justify-content-end">
+                            <Link to="/" className="nav-link">Home</Link>
+                            <Link to="/about" className="nav-link">About</Link>
+                            <Link to="/products" className="nav-link">Products</Link>
+                            <Link to="/new" className="nav-link">Create</Link>
+                        </Nav>
+                        <Form className="d-flex">
+                            <FormControl
+                            type="search"
+                            placeholder="Add Search"
+                            className="me-2"
+                            aria-label="Search"
+                            />
+                        </Form>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Stack gap={3} className="col-md-10 mx-auto mt3">
-                <Outlet />
-            </Stack>
+            <Container className={`p-5 h-100 ${styles.minheight}`}>
+                     <Row className="h-100">
+                        <Col md={12}>
+                            <Outlet />
+                        </Col>
+                    </Row>
+            </Container>
+            <Container fluid className="bg-dark p-5 h-100">
+                    <Row className="h-100">
+                        <Col md={12} className="text-center text-white">
+                            <p>Copyright ShopyGuy 2022</p>
+                        </Col>
+                    </Row>
+            </Container>
         </>
     )
 }
