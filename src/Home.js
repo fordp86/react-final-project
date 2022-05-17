@@ -15,7 +15,7 @@ function Home(){
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                         <img
                         alt="shopy guy logo"
                         src="/img/cart.png"
