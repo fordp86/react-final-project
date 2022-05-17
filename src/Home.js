@@ -1,8 +1,16 @@
 import { Navbar, Nav, Container, Form, FormControl, Row, Col } from 'react-bootstrap';
 import { Link, Outlet } from 'react-router-dom';
+import { ProductContext } from './ProductContext';
+import { useContext } from "react";
 import styles from './Home.module.css'
 
 function Home(){
+    let { searchyByContent } = useContext(ProductContext)
+
+    function searchForm(){
+        searchyByContent()
+    }
+
     return(
         <>
             <Navbar bg="dark" variant="dark">
@@ -24,7 +32,7 @@ function Home(){
                             <Link to="/products" className="nav-link">Products</Link>
                             <Link to="/new" className="nav-link">Create</Link>
                         </Nav>
-                        <Form className="d-flex">
+                        <Form onSubmit={searchForm} className="d-flex">
                             <FormControl
                             type="search"
                             placeholder="Add Search"

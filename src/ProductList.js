@@ -10,7 +10,8 @@ function ProductList(){
 
     let navigate = useNavigate()
 
-    let { getProduct, deleteProduct } = useContext(ProductContext)
+    let { getProduct, deleteProduct, orderLowToHigh, orderHighToLow, filterByPriceLow, filterByPriceMed, filterByPriceHigh } = useContext(ProductContext)
+    
     let [ product, setProduct ] = useState()
 
     useEffect(() => {
@@ -24,6 +25,30 @@ function ProductList(){
     function handleDeleteProduct(id){
         deleteProduct(id)
         navigate("/products")
+    }
+
+    // Filter Function
+
+    function filterByLow(){
+        filterByPriceLow()
+    }
+
+    function filterByMed(){
+        filterByPriceMed()
+    }
+
+    function filterByHigh(){
+        filterByPriceHigh()
+    }
+
+    //Sorting Functions
+
+    function sortHigh(){
+        orderHighToLow()
+    }
+
+    function sortLow(){
+        orderLowToHigh()
     }
 
     function productList(products){
@@ -58,19 +83,19 @@ function ProductList(){
                     <Col md={6}>
                     <Dropdown>
                         <Dropdown.Toggle variant="info" id="dropdown-basic">
-                            Sort By
+                            Filter Price
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Price</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">A to Z</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Z to A</Dropdown.Item>
+                            <Dropdown.Item onClick={filterByLow}>0 - 200</Dropdown.Item>
+                            <Dropdown.Item onClick={filterByMed}>200 to 400</Dropdown.Item>
+                            <Dropdown.Item onClick={filterByHigh}>400 to 1000</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
                     </Col>
                     <Col md={6}>
-                        <Button variant="secondary">Price High to Low *add</Button>
-                        <Button variant="primary">Price Low to High *add</Button>
+                        <Button onClick={sortHigh} variant="secondary">Price High to Low</Button>
+                        <Button onClick={sortLow} variant="primary">Price Low to High</Button>
                     </Col>
                 </Row>
                 <Row className="col-md-12">

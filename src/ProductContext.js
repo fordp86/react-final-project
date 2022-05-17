@@ -51,9 +51,50 @@ export const ProductProvider = (props) => {
         })
       }
       
+    function filterByPriceLow(){
+      return axios.get(`http://localhost:3001/products/?price_gte=0&price_lte=200`)
+      .then(response => {
+        setProducts(response.data)
+     })
+    }
+
+    function filterByPriceMed(){
+      return axios.get(`http://localhost:3001/products/?price_gte=200&price_lte=400`)
+      .then(response => {
+        setProducts(response.data)
+     })
+    }
+
+    function filterByPriceHigh(){
+      return axios.get(`http://localhost:3001/products/?price_gte=400&price_lte=999`)
+      .then(response => {
+        setProducts(response.data)
+     })
+    }
+
+    function searchyByContent(){
+      return axios.get(`http://localhost:3001/products?q=`)
+      .then(response => {
+        setProducts(response.data)
+      })
+    }
+
+    function orderHighToLow(){
+      return axios.get(`http://localhost:3001/products/?_sort=price&_order=desc`)
+      .then(response => {
+        setProducts(response.data)
+      })
+    }
+
+    function orderLowToHigh(){
+      return axios.get(`http://localhost:3001/products/?_sort=price&_order=asc`)
+      .then(response => {
+        setProducts(response.data)
+     })
+    }
 
     return (
-        <ProductContext.Provider value={{ products, getProduct, deleteProduct, addProduct, updateProduct }}>
+        <ProductContext.Provider value={{ products, getProduct, deleteProduct, addProduct, updateProduct, filterByPriceLow, filterByPriceMed, filterByPriceHigh, searchyByContent, orderHighToLow, orderLowToHigh }}>
             {props.children}
         </ProductContext.Provider>
     )
