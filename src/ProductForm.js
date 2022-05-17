@@ -49,7 +49,7 @@ function ProductForm(){
     function handleSubmit(event) {
         event.preventDefault()
         addOrUpdate().then((product) =>
-            navigate(`/products`)
+            navigate(-1)
         )
     }
 
