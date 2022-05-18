@@ -47,7 +47,7 @@ function Product(){
               <Card.Subtitle className="mb-2 text-muted">{description}</Card.Subtitle>
               <Card.Text>
                 <strong>Material:</strong> <span>{itemMaterial}</span> <br />
-                <strong>Price:</strong> <span>{price}</span>
+                <strong>Price:</strong><span>{price}</span>
               </Card.Text>
               <Link to={`/products/${id}/edit`} className="btn btn-primary mx-3">Edit</Link>
               <Button variant="danger" onClick={handleDeleteProduct.bind(this, id)}>Delete</Button>

@@ -11,7 +11,7 @@ module.exports = () => {
       itemImage: `${productImg}`,
       description: faker.commerce.productDescription(),
       itemMaterial: faker.commerce.productMaterial(),
-      price: faker.commerce.price()
+      price: '$' + faker.commerce.price()
     })
   }
   return data

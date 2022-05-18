@@ -11,7 +11,7 @@ function ProductList(){
     let navigate = useNavigate()
 
     let { getProduct, deleteProduct, orderLowToHigh, orderHighToLow, filterByPriceLow, filterByPriceMed, filterByPriceHigh } = useContext(ProductContext)
-    
+
     let [ product, setProduct ] = useState()
 
     useEffect(() => {
@@ -87,9 +87,10 @@ function ProductList(){
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
-                            <Dropdown.Item onClick={filterByLow}>0 - 200</Dropdown.Item>
-                            <Dropdown.Item onClick={filterByMed}>200 to 400</Dropdown.Item>
-                            <Dropdown.Item onClick={filterByHigh}>400 to 1000</Dropdown.Item>
+                            <Dropdown.Item href="/products">All</Dropdown.Item>
+                            <Dropdown.Item onClick={filterByLow}>$0 - $200</Dropdown.Item>
+                            <Dropdown.Item onClick={filterByMed}>$200 to $400</Dropdown.Item>
+                            <Dropdown.Item onClick={filterByHigh}>$400 to $1000</Dropdown.Item>
                         </Dropdown.Menu>
                         </Dropdown>
                     </Col>
