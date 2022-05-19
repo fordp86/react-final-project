@@ -48,7 +48,7 @@ function ProductForm(){
 
     function handleSubmit(event) {
         event.preventDefault()
-        addOrUpdate().then((product) =>
+        addOrUpdate().then(() =>
             navigate(-1)
         )
     }

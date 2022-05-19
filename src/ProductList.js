@@ -56,13 +56,13 @@ function ProductList(){
         return products.map((product) => 
             <Col md={4} key={product.id} className="mt-3">
                 <Card>
-                    <Card.Img variant="top" src={product.itemImage} />
+                    <Card.Img variant="top" src={product.itemImage} className="img-fluid h-75" height="150px" />
                     <Card.Body>
                     <Card.Title>{product.itemName}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{product.description}</Card.Subtitle>
                     <Card.Text>
                         <strong>Material:</strong> <span>{product.itemMaterial}</span> <br />
-                        <strong>Price:</strong> <span>{product.price}</span>
+                        <strong>Price:</strong> <span>${product.price}</span>
                     </Card.Text>
                     <Link to={`/products/${product.id}`} className="btn btn-secondary mx-3">View</Link>
                     <Link to={`/products/${product.id}/edit`} className="btn btn-primary mx-3">Edit</Link>
@@ -82,7 +82,7 @@ function ProductList(){
                 <Row className="col-md-12">
                     <Col md={6}>
                     <Dropdown>
-                        <Dropdown.Toggle variant="info" id="dropdown-basic">
+                        <Dropdown.Toggle variant="info" id="dropdown-basic" className="rounded-0">
                             Filter Price
                         </Dropdown.Toggle>
 
@@ -94,9 +94,9 @@ function ProductList(){
                         </Dropdown.Menu>
                         </Dropdown>
                     </Col>
-                    <Col md={6}>
-                        <Button onClick={sortHigh} variant="secondary">Price High to Low</Button>
-                        <Button onClick={sortLow} variant="primary">Price Low to High</Button>
+                    <Col md={6} className="text-end">
+                        <Button onClick={sortHigh} variant="secondary" className="rounded-0 mx-3">Price High to Low</Button>
+                        <Button onClick={sortLow} variant="primary" className="rounded-0">Price Low to High</Button>
                     </Col>
                 </Row>
                 <Row className="col-md-12">

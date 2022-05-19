@@ -1,45 +1,26 @@
-import { Navbar, Nav, Container, Form, FormControl, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, Container,Row, Col } from 'react-bootstrap';
 import { Link, Outlet } from 'react-router-dom';
-import { ProductContext } from './ProductContext';
-import { useContext } from "react";
 import styles from './Home.module.css'
 
 function Home(){
-    let { searchyByContent } = useContext(ProductContext)
-
-    function searchForm(){
-        searchyByContent()
-    }
-
     return(
         <>
-            <Navbar bg="dark" variant="dark">
+            <Navbar variant="dark" className={`${styles.navBg}`}>
                 <Container>
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href="/" className={`${styles.logo}`}>
                         <img
                         alt="shopy guy logo"
                         src="/img/cart.png"
-                        width="200"
-                        height="auto"
-                        className="d-inline-block align-top"
+                        className={"d-inline-block align-top img-fluid"}
                         />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Nav className="me-auto justify-content-end">
+                    <Navbar.Collapse className="justify-content-end">
+                        <Nav className={`${styles.font}`}>
                             <Link to="/" className="nav-link">Home</Link>
                             <Link to="/about" className="nav-link">About</Link>
                             <Link to="/products" className="nav-link">Products</Link>
                             <Link to="/new" className="nav-link">Create</Link>
                         </Nav>
-                        <Form onSubmit={searchForm} className="d-flex">
-                            <FormControl
-                            type="search"
-                            placeholder="Add Search"
-                            className="me-2"
-                            aria-label="Search"
-                            />
-                        </Form>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
@@ -50,7 +31,7 @@ function Home(){
                         </Col>
                     </Row>
             </Container>
-            <Container fluid className="bg-dark p-5 h-100">
+            <Container fluid className={`${styles.navBg} p-5 h-100`}>
                     <Row className="h-100">
                         <Col md={12} className="text-center text-white">
                             <p>Copyright ShopyGuy 2022</p>

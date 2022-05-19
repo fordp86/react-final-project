@@ -6,7 +6,7 @@
       "itemImage": "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2052&q=80",
       "description": "Comfort pants are ergonomically designed to give easy fit",
       "itemMaterial": "Bronze",
-      "price": "$889.00"
+      "price": "889.00"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "itemImage": "https://images.unsplash.com/photo-1581497396202-5645e76a3a8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
       "description": "Cool sweater",
       "itemMaterial": "Cotton",
-      "price": "$845.00"
+      "price": "845.00"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "itemImage": "https://images.unsplash.com/photo-1605773527852-c546a8584ea3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80",
       "description": "The slim & simple Maple Gaming Mouse from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
       "itemMaterial": "Plastic",
-      "price": "$997.00"
+      "price": "997.00"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "itemImage": "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
       "description": "Great hat",
       "itemMaterial": "Granite",
-      "price": "$208.00"
+      "price": "208.00"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "itemImage": "https://images.unsplash.com/photo-1609377375722-46264cf88939?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2364&q=80",
       "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
       "itemMaterial": "Soft",
-      "price": "$406.00"
+      "price": "406.00"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "itemImage": "https://images.unsplash.com/photo-1542901031-ec5eeb518e83?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370",
       "description": "Good Sausage",
       "itemMaterial": "Steel",
-      "price": "$329.00"
+      "price": "329.00"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "itemImage": "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
       "description": "Good Soap",
       "itemMaterial": "Steel",
-      "price": "$424.00"
+      "price": "424.00"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "itemImage": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370",
       "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
       "itemMaterial": "Metal",
-      "price": "$899.00"
+      "price": "899.00"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "itemImage": "https://images.unsplash.com/photo-1510697963685-53101e615777?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
       "description": "Cool Ball",
       "itemMaterial": "Frozen",
-      "price": "$165.00"
+      "price": "165.00"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "itemImage": "https://images.unsplash.com/photo-1551248429-40975aa4de74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1890&q=80",
       "description": "You'll love our salad",
       "itemMaterial": "Cotton",
-      "price": "$230.00"
+      "price": "230.00"
     }
   ]
 }

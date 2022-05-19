@@ -1,3 +1,22 @@
 .minheight{
     min-height: 90vh;
 }
+
+.navBg{
+    background-color:#4B7F52;
+}
+
+.logo{
+    max-width: 200px;
+    height: auto;
+}
+
+.font{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footerBg{
+    background-color:#4B7F52;
+}
